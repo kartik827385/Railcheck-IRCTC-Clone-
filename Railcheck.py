@@ -14,7 +14,7 @@ class Railcheck:
   def train_schedule(self):
     train_no = input("Enter the train number")
     self.fetch_data(train_no)
-    Data = request.get("")
+    Data = request.get("insert your indianrail Api key")
     Data = data.json()
     print(Data)
 
