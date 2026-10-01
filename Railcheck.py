@@ -14,3 +14,11 @@ class Railcheck:
   def train_schedule(self):
     train_no = input("Enter the train number")
     self.fetch_data(train_no)
+    Data = request.get("")
+    Data = data.json()
+    print(Data)
+
+for i in data['route']:
+  print(i['station name'],"|",i['arrival time'],"|",i['departure time'],"|",i['distance'],"kms")
+
+obj = Railcheck()
